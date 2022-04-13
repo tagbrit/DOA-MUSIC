@@ -1,6 +1,4 @@
 % Main code for generating signals and plotting DOA estimation
-% Some is based off of the midterm code with some changes made
-% such as the inclusion of AWGN to manipulate SNR
 % Includes the MUSIC function at the end
 
 clear;
@@ -43,7 +41,6 @@ ylabel('Magnitude (dB)');
 xlim([-70,70])
 
 %% MUSIC Function
-% Based off midterm code
 
 function [music] = MUSIC(X,K)
     [~,T]=size(X); % want the number columns
